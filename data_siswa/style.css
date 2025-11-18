@@ -1,0 +1,158 @@
+/* Gaya Umum */
+body {
+    font-family: sans-serif;
+    background-image: url('background.jpg'); /* Ganti dengan path gambar latar belakang */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333; /* Warna teks utama */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #04da7d; /* Merah Marun untuk Judul */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+a {
+    color: #0bb95c; /* Merah untuk tautan */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #33ff55; /* Merah lebih terang saat di-hover */
+    text-decoration: underline;
+}
+
+/* Gaya Form (Tambah dan Edit) */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 20px auto; /* BARIS INI YANG MEMBUAT FORM KE TENGAH */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #aaa; /* Border abu-abu gelap */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #07cc00; /* Merah untuk tombol utama */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    width: 100%;
+    display: block;
+}
+
+button[type="submit"]:hover {
+    background-color: #20a000; /* Merah lebih gelap saat di-hover */
+}
+
+/* Gaya Tabel (Index) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan tipis abu-abu */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Garis abu-abu pada tabel */
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #888; /* Latar belakang header abu-abu sedang */
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Garis zebra abu-abu sangat muda */
+}
+
+/* Search Bar (Index) */
+.search-container {
+    max-width: 700px;
+    margin: 20px auto;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.search-input,
+input[type="search"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.search-button,
+button[type="submit"].search-button {
+    background-color: #00cc36;
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-button:hover {
+    background-color: #00a055;
+}
+
+@media (max-width: 600px) {
+    .search-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search-button {
+        width: 100%;
+    }
+}
+/* Pesan Sukses */
+p {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #e0f0e0; /* Latar belakang hijau muda (untuk kesan sukses) */
+    border: 1px solid #c0d0c0;
+    color: #333;
+    border-radius: 4px;
+    max-width: 500px;
+    text-align: center;
+}
